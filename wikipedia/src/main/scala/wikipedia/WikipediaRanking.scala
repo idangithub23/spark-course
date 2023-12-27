@@ -29,8 +29,8 @@ object WikipediaRanking {
 
   /**
    * Returns the number of articles on which the language `lang` occurs.
-   *  Hint1: consider using method `aggregate` on RDD[T].
-   *  Hint2: consider using method `mentionsLanguage` on `WikipediaArticle`
+   * Hint1: consider using method `aggregate` on RDD[T].
+   * Hint2: consider using method `mentionsLanguage` on `WikipediaArticle`
    */
   def occurrencesOfLang(lang: String, rdd: RDD[WikipediaArticle]): Int = rdd.aggregate(0)((count, article) => if article.mentionsLanguage(lang) then
     count + 1
@@ -97,6 +97,7 @@ object WikipediaRanking {
   }
 
   private val timing = new StringBuffer
+
   private def timed[T](label: String, code: => T): T = {
     val start = System.currentTimeMillis()
     val result = code
