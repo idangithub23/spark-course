@@ -1,0 +1,102 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.2 (Eclipse Adoptium Java 11.0.21)
+[debug] Load.defaultLoad until apply took 222.6593ms
+[debug]           Load.loadUnit: plugins took 181.5617ms
+[debug]           Load.loadUnit: defsScala took 1.3773ms
+[debug] [Loading] Scanning directory C:\Users\micha\Downloads\wikipedia\wikipedia\project
+[debug]             Load.loadUnit: mkEval took 13.6457ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\micha\Downloads\wikipedia\wikipedia\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 33.4029 ms
+[info] loading settings for project wikipedia-build from buildSettings.sbt,plugins.sbt ...
+[debug]               Load.resolveProject(wikipedia-build) took 70.1387ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id wikipedia-build, base: C:\Users\micha\Downloads\wikipedia\wikipedia\project, plugins: List(<none>))) took 124.8839ms
+[debug] [Loading] Done in C:\Users\micha\Downloads\wikipedia\wikipedia\project, returning: (wikipedia-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 4469.4448ms
+[debug]           Load.loadUnit: cleanEvalClasses took 17.2576ms
+[debug]         Load.loadUnit(file:/C:/Users/micha/Downloads/wikipedia/wikipedia/project/, ...) took 4687.0807ms
+[debug]       Load.apply: load took 4925.7482ms
+[debug]       Load.apply: resolveProjects took 6.1039ms
+[debug]       Load.apply: finalTransforms took 133.1895ms
+[debug]       Load.apply: config.delegates took 27.9276ms
+[debug]       Load.apply: Def.make(settings)... took 1167.3694ms
+[debug]       Load.apply: structureIndex took 158.2256ms
+[debug]       Load.apply: mkStreams took 4.0394ms
+[info] loading project definition from C:\Users\micha\Downloads\wikipedia\wikipedia\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\micha\Downloads\wikipedia\wikipedia\project\target\scala-2.12\sbt-1.0\classes ...
+[info] done compiling
+[debug]     Load.loadUnit: plugins took 20964.1579ms
+[debug]     Load.loadUnit: defsScala took 0.0037ms
+[debug] [Loading] Scanning directory C:\Users\micha\Downloads\wikipedia\wikipedia
+[debug]       Load.loadUnit: mkEval took 0.4356ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\micha\Downloads\wikipedia\wikipedia, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(ch.epfl.lamp.StudentTasks), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(scalafix.sbt.ScalafixPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(scalafix.sbt.ScalafixTestkitPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(ch.epfl.lamp.MOOCSettings),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(ch.epfl.lamp.StudentTasks),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(ch.epfl.lamp.StudentTasks),Set(Atom(ch.epfl.lamp.MOOCSettings)))
+[debug] Clause(Atom(ch.epfl.lamp.CourseraStudent),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(ch.epfl.lamp.CourseraStudent),Set(Atom(ch.epfl.lamp.MOOCSettings)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(scalafix.sbt.ScalafixPlugin)))
+[debug] Clause(And(Set(Atom(ch.epfl.lamp.StudentTasks), Atom(sbt.plugins.JvmPlugin), Atom(ch.epfl.lamp.MOOCSettings))),Set(Atom(ch.epfl.lamp.CourseraStudent))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,ch.epfl.lamp.StudentTasks,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,ch.epfl.lamp.MOOCSettings,sbt.plugins.JvmPlugin,ch.epfl.lamp.CourseraStudent,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,scalafix.sbt.ScalafixPlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.8566 ms
+[info] loading settings for project wikipedia from assignment.sbt,build.sbt ...
+[debug]         Load.resolveProject(wikipedia) took 44.3702ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id wikipedia, base: C:\Users\micha\Downloads\wikipedia\wikipedia, plugins: List(<none>))) took 49.5873ms
+[debug] [Loading] Done in C:\Users\micha\Downloads\wikipedia\wikipedia, returning: (wikipedia)
+[debug]     Load.loadUnit: loadedProjectsRaw took 3250.3208ms
+[debug]     Load.loadUnit: cleanEvalClasses took 7.104ms
+[debug]   Load.loadUnit(file:/C:/Users/micha/Downloads/wikipedia/wikipedia/, ...) took 24224.0109ms
+[debug] Load.apply: load took 24302.9424ms
+[debug] Load.apply: resolveProjects took 0.1122ms
+[debug] Load.apply: finalTransforms took 21.686ms
+[debug] Load.apply: config.delegates took 0.3323ms
+[debug] Load.apply: Def.make(settings)... took 1242.0366ms
+[debug] Load.apply: structureIndex took 37.1043ms
+[debug] Load.apply: mkStreams took 0.0036ms
+[info] set current project to bigdata-wikipedia (in build file:/C:/Users/micha/Downloads/wikipedia/wikipedia/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:sbt-server-f2bc6c9442db601a3116
+[debug] Writing bsp connection file
+[info] started sbt server
